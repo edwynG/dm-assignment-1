@@ -1,2 +1,8 @@
-# dm-assignment-1
-Este es el repositorio donde se guarda la primera asignación de la materia de minería de datos, que trata sobre cómo preparar y limpiar los datos antes de analizarlos.
+# Medical Students Dataset - Preprocesamiento
+Usando los datos` medical-students-dataset.csv`, cree un notebook en python (jupyter) en donde realice el preprocesamiento que considere necesario para el conjunto de datos dados, considerando los principios discutidos en [clases](https://drive.google.com/file/d/1MrNuxn1LT_2ngbA3Og7jTv6Ajr7FBDr3/view?usp=sharing "Preprocesamiento de datos").
+
+## Resumen del preprocesamiento
+Al preparar el conjunto de datos de estudiantes de medicina, se hizo una limpieza y transformación para asegurar que la información fuera correcta y útil. Primero, se revisó que los datos tuvieran la estructura adecuada, es decir, que la forma en que estaban guardados coincidiera con lo que realmente significan. Por ejemplo, las respuestas de sí o no en preguntas como "¿Tiene diabetes?" o "¿Fuma?" se cambiaron a números (0 y 1) para facilitar los cálculos. En cambio, datos como el género o el tipo de sangre se dejaron en texto para que fueran fáciles de entender y no se interpretara que tienen un orden.
+También se revisó que los datos fueran suficientes y adecuados para el análisis. Como había un 10% de datos faltantes, se usó un método que rellena esos espacios con valores tomados al azar de los datos existentes, para no cambiar la variabilidad ni la forma original de los datos. Esto es mejor que usar la media o la mediana, que podrían distorsionar los resultados.
+
+Por último, se decidió no cambiar la escala de las variables numéricas (como peso, altura o temperatura) para que los valores siguieran siendo fáciles de interpretar en sus unidades originales, ya que asumimos que el análisis era exploratorio y se quería mantener la claridad clínica.
